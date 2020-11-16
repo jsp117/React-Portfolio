@@ -1,7 +1,9 @@
 import React from "react";
 import "./style.css"
 
-function Card() {
+function Card({page}) {
+
+    
     return (
         <div data-aos="zoom-in-down" data-aos-duration="3000">
             <section className="row">

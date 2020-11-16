@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import "./style.css";
@@ -6,7 +6,7 @@ import axios from "axios";
 import API from "../utils/api";
 
 function Main() {
-
+    const [page, setPage] = useState("index");
 
 
     useEffect(() => {
@@ -43,15 +43,32 @@ function Main() {
         // console.log("response on main", response);
     }, []);
 
+    // activity 21 section 18 shows how to change active page
+    useEffect(() => {
+    }, [page]);
+
+    function handlePage(event){
+        event.preventDefault();
+        let value = event.target.name;
+        if(value==="index"){
+            setPage("index");
+        }else if(value==="portfolio"){
+            setPage("portfolio");
+        }else if(value==="contact"){
+            setPage("contact");
+        }else if(value==="projects"){
+            setPage("projects");
+        }
+    }
 
 
 
 
     return (
         <div className="container">
-            <Header />
+            <Header page={page} click={handlePage}/>
             <section id="spacing"></section>
-            <Card />
+            <Card page={page} />
             <section id="spacing"></section>
         </div>
     )
