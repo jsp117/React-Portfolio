@@ -10,14 +10,14 @@ function Main() {
 
 
     useEffect(() => {
-        var token = "toke285a65929c2ed11d5352502b9b21214c78c192c3"
+        var token = "toke91c0d6a2bcb84fd0f2db445a94f7eb4b12f35dfb"
         token = token.replace('toke', '');
         fetch("https://api.github.com/users/jsp117/repos", {
             method: "get",
             headers: new Headers({
                 Accept: "application/vnd.github.v3+json",
                 Username: "jsp117",
-                Authorization: "token: 285a65929c2ed11d5352502b9b21214c78c192c3",
+                Authorization: "token:" + token,
             })
         }).then(function (response) {
             console.log(response);
@@ -30,7 +30,7 @@ function Main() {
         //     headers: {
         //     Accept: "application/vnd.github.v3+json",
         //     Username: "jsp117",
-        //     Authorization: "token: 285a65929c2ed11d5352502b9b21214c78c192c3",
+        //     Authorization: "token: token",
         // },
         // }).then(function (response) {
         //     return response.data;
