@@ -5,29 +5,29 @@ function Header() {
 
     return (
         <header>
-            <nav class="navbar fixed-top navbar-light">
-                <a class="navbar-brand" href="index.html">
+            <nav className="navbar fixed-top navbar-light">
+                <a className="navbar-brand" href="index.html">
                     My Portfolio
                 </a>
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <nav className="navbar navbar-expand-lg navbar-light">
+                    <a className="navbar-toggler" type="a" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <nav class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/projects">Projects</a>
+                        <span className="navbar-toggler-icon"></span>
+                    </a>
+                    <nav className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link" href="/projects">Projects</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact">Contact</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/contact">Contact</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/portfolio">Portfolio</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/portfolio">Portfolio</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">About</a>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="#">About</a>
                             </li>
                         </ul>
                     </nav>

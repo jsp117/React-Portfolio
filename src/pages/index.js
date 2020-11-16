@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Card from "../components/Card";
+import "./style.css";
 import axios from "axios";
 import API from "../utils/api";
 
@@ -51,6 +52,7 @@ function Main() {
             <Header />
             <section id="spacing"></section>
             <Card />
+            <section id="spacing"></section>
         </div>
     )
 }
