@@ -5,7 +5,7 @@ h1{
 
 body{
   /* background image by Faye Cornish */
-  background-image: url("https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80");
+  background-image: url("./photo-1518241353330-0f7941c2d9b5.jpg");
   background-size: cover;
   font-family: 'Roboto Slab', serif;
   overflow: auto;
@@ -47,7 +47,6 @@ footer{
   padding: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
-
 }
 
 .description{
