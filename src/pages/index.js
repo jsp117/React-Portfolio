@@ -43,7 +43,6 @@ function Main() {
         // console.log("response on main", response);
     }, []);
 
-    // activity 21 section 18 shows how to change active page
     useEffect(() => {
     }, [page]);
 

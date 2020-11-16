@@ -6,11 +6,11 @@ function Header({page, click}) {
     return (
         <header>
             <nav className="navbar fixed-top navbar-light">
-                <a className="navbar-brand" href="index.html">
+                <a className="navbar-brand" onClick={click} name="index" href="/index">
                     My Portfolio
                 </a>
                 <nav className="navbar navbar-expand-lg navbar-light">
-                    <a className="navbar-toggler" onClick={click} name="index" type="a" data-toggle="collapse"
+                    <a className="navbar-toggler" type="a" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
