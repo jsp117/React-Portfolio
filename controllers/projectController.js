@@ -1,4 +1,3 @@
-const { removeListener } = require("process");
 const db = require("../models");
 
 // Defining methods for the ProjectController
