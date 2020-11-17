@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const projectSchema = new Schema({
     name: { type: String, required: true },
     image_url: { type: String, required: true },
-    description: { type: Text, required: true },
+    description: { type: String, required: true },
     repo_url: { type: String, required: true },
     deployed_url: { type: String, required: true }
 });
