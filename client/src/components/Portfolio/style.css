@@ -1,0 +1,27 @@
+.portfolioContent{
+    /* padding-left: 210px; */
+    padding: 20px;
+    height: 800px;
+    width: 130%;
+    /* overflow: auto; */
+  }
+  .repos{
+    /* width: 33.3%; */
+    height: 250px;
+    overflow:auto;
+    padding: 10px;
+  }
+  @media only screen and (max-width: 575px) {
+    .portfolioContent {
+      width: 100%;
+    }
+  }
+  .test{
+      overflow-x: hidden;
+      overflow-y: auto;
+  }
+
+  .border-bottom{
+    /* padding-top: 25px; */
+    /* margin-left: -40px; */
+  }

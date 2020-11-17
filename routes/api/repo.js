@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const repos = require("../controllers/repos");
+const repos = require("../../controllers/repos");
 const axios = require("axios");
 
 
@@ -18,7 +18,7 @@ router.route("/").get(async function (req, res) {
             Authorization: `token ${token}`,
         },
     }).then(function (response) {
-        console.log("response on server: ", response.data)
+        // console.log("response on server: ", response.data)
         return response.data;
     }).catch(function (error) {
         console.log(error);

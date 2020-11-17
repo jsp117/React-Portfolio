@@ -12,19 +12,22 @@ import API from "../utils/api";
 
 function Main() {
     const [page, setPage] = useState("index");
+    const [repos, setRepos] = useState([]);
 
 
     useEffect(() => {
-        axios.get("/api/repo", function (req, res) {
-            console.log("response: ", res);
-        }).catch(err=>console.log(err));
+        // working
+        // axios.get("/api/repo").then(function (res) {
+        //     console.log("response: ", res);
+        // }, err => console.log(err))
 
 
-        // API.getRepos()
-        //     .then(function (response) {
-        //         console.log("REPOS: ", response)
-        //             .catch(err => console.log(err))
-        //     })
+        API.getRepos()
+            .then(function (response) {
+                console.log("REPOS: ", response)
+                setRepos(response.data);
+                console.log("repo state", repos);
+            }, err=>console.log(err));
 
 
     }, []);
@@ -58,8 +61,8 @@ function Main() {
                     <Route exact path={["/", "/index"]} component={About}>
                         {/* <About page={page} /> */}
                     </Route>
-                    <Route exact path={"/portfolio"} component={Portfolio}>
-                        {/* <Portfolio page={page} /> */}
+                    <Route exact path={"/portfolio"} >
+                        <Portfolio repos={repos} />
                     </Route>
                     <Route exact path={"/contact"} component={Contact}>
                         {/* <Contact page={page} /> */}

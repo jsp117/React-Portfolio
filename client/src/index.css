@@ -39,10 +39,6 @@ footer{
   width: 100%;
 } 
 
-.border-bottom{
-  padding-top: 25px;
-  margin-left: -40px;
-}
 .projects{
   padding: 25px;
   margin-top: 25px;
@@ -62,10 +58,7 @@ footer{
   /* position: relative; */
 }
 
-#portfolioContent{
-  height:600px;
-  overflow: auto;
-}
+
 #projects{
   height:900px;
   overflow: auto;
