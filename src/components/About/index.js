@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 
-function Card({page}) {
+function About({page}) {
 
     
     return (
@@ -91,4 +91,4 @@ function Card({page}) {
 }
 
 
-export default Card;
+export default About;
