@@ -15,11 +15,9 @@ function Main() {
 
 
     useEffect(() => {
-        axios.get("/api/get/repo", function (req, res) {
-            var response = res;
-            console.log("response: ", response);
-          
-        })
+        axios.get("/api/repo", function (req, res) {
+            console.log("response: ", res);
+        }).catch(err=>console.log(err));
 
 
         // API.getRepos()
