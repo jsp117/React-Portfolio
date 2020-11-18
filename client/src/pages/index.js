@@ -13,7 +13,7 @@ import API from "../utils/api";
 
 function Main() {
     // initialize useStates
-    const [page, setPage] = useState("about");
+    const [page, setPage] = useState("");
     const [repos, setRepos] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -28,14 +28,10 @@ function Main() {
 
     }, []);
 
-    // useEffect(() => {
-    // }, [page]);
+   
 
     // set page on nav click
     function handlePage(target) {
-        // event.preventDefault();
-        // console.log("target", event);
-        // let value = event.target.innerText;
         if (target === "about") {
             setPage("about");
         } else if (target === "portfolio") {
@@ -46,8 +42,6 @@ function Main() {
             setPage("projects");
         }
     }
-
-
 
 
     return (
