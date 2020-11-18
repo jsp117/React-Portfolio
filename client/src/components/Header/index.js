@@ -8,9 +8,11 @@ function Header({ page, click }) {
     return (
         <header>
             <nav className="navbar fixed-top navbar-light">
-                <a className="navbar-brand" onClick={click} name="index" href="/index">
-                    My Portfolio
-                </a>
+                <h4 onClick={click} name="about" value="about" className="nav-item">
+                    {/* <a onClick={click} className={page === "index" ? "nav-link active" : "nav-link"} name="index" href="/index">About</a> */}
+                    <Link className="text-light" to={"/about"}>My Portfolio</Link>
+
+                </h4>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <a className="navbar-toggler" type="a" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"

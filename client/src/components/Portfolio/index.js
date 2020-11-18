@@ -15,7 +15,7 @@ function Portfolio({ repos, loading }) {
                                     return <div className="card col-sm-3 border-bottom repos m-2">
                                         <h4 className="border-bottom p-3">{repo.name}</h4>
                                         <p>{repo.description}</p>
-                                        <a href={repo.html_url} target="_blank">Repository Link</a>
+                                        <a href={repo.html_url} target="_blank" rel="noreferrer">Repository Link</a>
                                     </div>
                                 }) : "Loading..."}
                             </section>

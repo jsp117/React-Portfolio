@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css"
 
-function About({page}) {
+function About({ page }) {
 
-    
+
     return (
         <div data-aos="zoom-in-down" data-aos-duration="3000">
             <section className="row">
+                <section className="background"></section>
                 <section className="col-lg-12">
                     <section className="card mb-3 back">
                         <header className="card-header">
@@ -64,20 +65,18 @@ function About({page}) {
                                 </div>
 
                                 <div className="col">
-                                    <p className="card-text">Links: </p>
-                                    <ul>
-                                        <li><a href="https://www.linkedin.com/in/jonathan-s-6ab32283/"
-                                            target="_blank" rel="noreferrer">LinkedIn</a>
-                                        </li>
-                                        <li><a href="https://github.com/jsp117" target="_blank" rel="noreferrer">Github</a></li>
-                                    </ul>
                                     <p className="card-text">Contact Information: </p>
                                     <ul>
                                         <li>Phone: (609)468-2447</li>
                                         <li>
                                             <div>Email: <a href="mailto:jonsp14@gmail.com" name="email"
                                                 id="email">jonsp14@gmail.com</a></div>
-                                        </li>
+                                        </li><br />
+                                        <a href="https://www.linkedin.com/in/jonathan-s-6ab32283/"
+                                            target="_blank" rel="noreferrer"><img id="linkedin" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"></img></a>
+                                        <a href="https://github.com/jsp117" target="_blank" rel="noreferrer">
+                                            <img src="https://img.icons8.com/metro/26/000000/github.png" alt="github logo" />
+                                        </a>
                                     </ul>
                                 </div>
 
