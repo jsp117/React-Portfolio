@@ -38,8 +38,6 @@ function Contact() {
         setModalClass("modal hideModal");
     }
 
-
-
     return (
         <div data-aos="fade-right" data-aos-duration="700" data-aos-easing="linear">
             <div className="push"></div>
