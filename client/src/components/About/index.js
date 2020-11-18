@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-function About({ page }) {
+function About() {
 
 
     return (

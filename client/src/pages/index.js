@@ -7,7 +7,6 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import "./style.css";
-import axios from "axios";
 import API from "../utils/api";
 
 function Main() {
@@ -21,7 +20,7 @@ function Main() {
         API.getRepos()
             .then(function (response) {
                 setLoading(false);
-                console.log("repos: ", response.data)
+                // console.log("repos: ", response.data)
                 setRepos(response.data);
 
             }, err => console.log(err));
@@ -33,7 +32,7 @@ function Main() {
 
     function handlePage(event) {
         event.preventDefault();
-        console.log("target", event);
+        // console.log("target", event);
         let value = event.target.innerText;
         if (value === "About") {
             setPage("about");
