@@ -18,7 +18,7 @@ function Projects() {
                         <section className="container">
                             <div id="projects">
                                 {project.map(p => {
-                                    return <div className="project-container card text-center">
+                                    return <div key={p.id} className="project-container card text-center">
                                         <h4 className="title">{p.name}</h4>
                                         <div className="row">
                                             <div className="col-sm-3"></div><img className="col-sm-6 gifs img-fluid" src={p.image_url} alt={p.name + " gif"} />

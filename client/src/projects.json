@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "name": "Playr",
         "description": "Music Player Utilizing OpenWhyd, MusixMatch, and SoundCloud APIs. Playr generates random playlists based off user input and offers a simpler way to listen to music.",
         "repo_url": "https://github.com/jsp117/Playr",
@@ -7,6 +8,7 @@
         "image_url": "https://github.com/jsp117/Playr/raw/script/assets/playr1.gif"
     },
     {
+        "id": "2",
         "name": "'OneUpDB'",
         "description": "OneUpDB is a social media site for gamers. Select your favorite games, add friends, and recommend games to eachother. Search over 250000 games and view ratings and other information.",
         "repo_url": "https: //github.com/jsp117/Videogame-Database",

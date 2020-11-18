@@ -51,9 +51,9 @@ function Main() {
     return (
         <Router>
             <Header page={page} click={handlePage} />
-            <Switch>
-                <div className="container">
-                    <section id="spacing"></section>
+            <div className="container">
+                <section id="spacing"></section>
+                <Switch>
                     <Route exact path={["/", "/about"]} component={About}>
                     </Route>
                     <Route exact path={"/portfolio"} >
@@ -63,9 +63,9 @@ function Main() {
                     </Route>
                     <Route exact path={"/projects"} component={Projects}>
                     </Route>
-                    <section id="spacing"></section>
-                </div>
-            </Switch>
+                </Switch>
+                <section id="spacing"></section>
+            </div>
             <Footer />
         </Router>
     )
