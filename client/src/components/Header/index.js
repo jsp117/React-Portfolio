@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 function Header({ page, click }) {
 
@@ -17,23 +18,23 @@ function Header({ page, click }) {
                         <span className="navbar-toggler-icon"></span>
                     </a>
                     <nav className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li className="nav-item">
+                        <ul className="navbar-nav mr-auto mt-2 mt-lg-0 color">
+                            <li onClick={click} name="projects" className="nav-item">
                                 {/* <a onClick={click} className={page === "projects" ? "nav-link active" : "nav-link"} name="projects" href="/projects">Projects</a> */}
-                                <Link className={page === "index" ? "nav-link active" : "nav-link"} to={"/projects"}>Projects</Link>
+                                <Link className={page === "projects" ? "nav-link active" : "nav-link"} to={"/projects"}>Projects</Link>
                             </li>
-                            <li className="nav-item">
+                            <li onClick={click} name="contact" className="nav-item">
                                 {/* <a onClick={click} className={page === "contact" ? "nav-link active" : "nav-link"} name="contact" href="/contact">Contact</a> */}
-                                <Link className={page === "index" ? "nav-link active" : "nav-link"} to={"/contact"}>Contact</Link>
+                                <Link className={page === "contact" ? "nav-link active" : "nav-link"} to={"/contact"}>Contact</Link>
 
                             </li>
-                            <li className="nav-item">
+                            <li onClick={click} name="portfolio" value="portfolio" className="nav-item">
                                 {/* <a onClick={click} className={page === "portfolio" ? "nav-link active" : "nav-link"} name="portfolio" href="/portfolio">Portfolio</a> */}
-                                <Link className={page === "index" ? "nav-link active" : "nav-link"} to={"/portfolio"}>Portfolio</Link>
+                                <Link className={page === "portfolio" ? "nav-link active" : "nav-link"} to={"/portfolio"}>Portfolio</Link>
                             </li>
-                            <li className="nav-item">
+                            <li onClick={click} name="about" value="about" className="nav-item">
                                 {/* <a onClick={click} className={page === "index" ? "nav-link active" : "nav-link"} name="index" href="/index">About</a> */}
-                                <Link className={page === "index" ? "nav-link active" : "nav-link"} to={"/index"}>About</Link>
+                                <Link className={page === "about" ? "nav-link active" : "nav-link"} to={"/about"}>About</Link>
 
                             </li>
                         </ul>

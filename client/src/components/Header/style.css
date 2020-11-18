@@ -1,3 +1,15 @@
-.active{
+/* .active{
     background: white;
-}
+} */
+
+.color{
+    background-color: #ffffff94;
+    border-radius: 10px;
+    /* text-align: center; */
+    margin-top:10px;
+  }
+  
+  .active{
+    background: white;
+    border-radius: 10px;
+  }

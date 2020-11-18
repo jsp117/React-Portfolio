@@ -13,22 +13,18 @@ import API from "../utils/api";
 function Main() {
     const [page, setPage] = useState("index");
     const [repos, setRepos] = useState([]);
-
+    // const [project, setProject] = useState(projectHolder);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // working
-        // axios.get("/api/repo").then(function (res) {
-        //     console.log("response: ", res);
-        // }, err => console.log(err))
-
 
         API.getRepos()
             .then(function (response) {
-                console.log("REPOS: ", response)
+                setLoading(false);
+                console.log("repos: ", response.data)
                 setRepos(response.data);
-                console.log("repo state", repos);
-            }, err=>console.log(err));
 
+            }, err => console.log(err));
 
     }, []);
 
@@ -37,14 +33,15 @@ function Main() {
 
     function handlePage(event) {
         event.preventDefault();
-        let value = event.target.name;
-        if (value === "index") {
-            setPage("index");
-        } else if (value === "portfolio") {
+        console.log("target", event);
+        let value = event.target.innerText;
+        if (value === "About") {
+            setPage("about");
+        } else if (value === "Portfolio") {
             setPage("portfolio");
-        } else if (value === "contact") {
+        } else if (value === "Contact") {
             setPage("contact");
-        } else if (value === "projects") {
+        } else if (value === "Projects") {
             setPage("projects");
         }
     }
@@ -58,17 +55,14 @@ function Main() {
             <Switch>
                 <div className="container">
                     <section id="spacing"></section>
-                    <Route exact path={["/", "/index"]} component={About}>
-                        {/* <About page={page} /> */}
+                    <Route exact path={["/", "/about"]} component={About}>
                     </Route>
                     <Route exact path={"/portfolio"} >
-                        <Portfolio repos={repos} />
+                        <Portfolio repos={repos} loading={loading} />
                     </Route>
                     <Route exact path={"/contact"} component={Contact}>
-                        {/* <Contact page={page} /> */}
                     </Route>
                     <Route exact path={"/projects"} component={Projects}>
-                        {/* <Projects page={page} /> */}
                     </Route>
                     <section id="spacing"></section>
                 </div>
