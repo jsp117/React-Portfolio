@@ -9,6 +9,7 @@ AOS.init();
 function Projects() {
     return (
         <div data-aos="fade-left" data-aos-duration="500" data-aos-easing="linear">
+            <div id="push"></div>
             <section className="row">
                 <section className="col-lg-12">
                     <section className="card mb-3 back">
