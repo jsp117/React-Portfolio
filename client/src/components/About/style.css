@@ -4,6 +4,10 @@
     width:34px;
 }
 
+.picture{
+    max-width: 250px;
+}
+
 .back{
     background-color: #ffffff94;
 }
@@ -15,3 +19,4 @@
     padding-left: 15%;
     padding-bottom: 50px;
 }
+

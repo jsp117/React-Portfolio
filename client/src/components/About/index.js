@@ -16,9 +16,9 @@ function About({ page }) {
                         <div className="container pl-5 pr-5">
                             <section className="row">
                                 <article className="card-body">
-                                    <p className="card-text text-wrap"><img className="pl-3 img-fluid d-block float-left"
+                                    <img className="pl-3 img-fluid d-block float-left mb-3 col picture"
                                         src="https://media-exp1.licdn.com/dms/image/C4E03AQEa1XPMTj3BqQ/profile-displayphoto-shrink_200_200/0?e=1609977600&v=beta&t=KH2_NH0JiTfnx5kmm6WCQXTzamcM2Dj7xOUE2fVIlno"
-                                        alt="Jon SanPedro Picture"></img> Hello! I'm Jonathan
+                                        alt="Jon SanPedro Picture"></img><p className="card-text text-wrap pt-4 col"> Hello! I'm Jonathan
                                     SanPedro
                                     and I am a student at the Berkeley Coding Academy. I graduated from Rutgers
                                     University
@@ -29,8 +29,7 @@ function About({ page }) {
                                     as an
                                     IT
                                     technician in
-                                    multiple states. Right around when Covid started, I began teaching myself little
-                                    bits of
+                                    multiple states. Right around when Covid started, I began teaching myself 
                                     JavaScript and
                                     wanted to grow my skills further. I hope to gain the skills to become a
                                     developer
