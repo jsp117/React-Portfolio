@@ -3,12 +3,12 @@ import project from "../../projects.json";
 import "./style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+// initialize aos
 AOS.init();
 
 function Projects() {
     return (
-        <div data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">
+        <div data-aos="fade-left" data-aos-duration="500" data-aos-easing="linear">
             <section className="row">
                 <section className="col-lg-12">
                     <section className="card mb-3 back">
@@ -17,6 +17,7 @@ function Projects() {
                         </header>
                         <section className="container">
                             <div id="projects">
+                                {/* display all projects */}
                                 {project.map(p => {
                                     return <div key={p.id} className="project-container card text-center">
                                         <h4 className="title">{p.name}</h4>
@@ -34,6 +35,7 @@ function Projects() {
                     </section>
                 </section>
             </section>
+            <div id="push"></div>
         </div >
     )
 }

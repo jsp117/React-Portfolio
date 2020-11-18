@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-// import e from "express";
+import "./style.css";
 
 function Contact() {
     function sendEmail(event) {
@@ -13,7 +13,8 @@ function Contact() {
             });
     }
     return (
-        <div data-aos="zoom-in-right" data-aos-duration="3000">
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-easing="linear">
+            <div className="push"></div>
             <section className="row">
                 <section className="col-lg-12">
                     <section className="card border-light mb-3 back">
@@ -23,15 +24,15 @@ function Contact() {
                         <section className="card-body">
                             <section>
                                 <form className="form-group contact-form" onSubmit={sendEmail}>
-                                    <label for="nameContact">Name</label>
+                                    <label>Name</label>
                                     <input type="text" name="user_name" className="form-control" id="nameContact" placeholder="Name" />
                                     <br />
-                                    <label for="emailContact">Email</label>
+                                    <label>Email</label>
                                     <input type="email" name="user_email" className="form-control" id="emailContact"
                                         placeholder="Email Address" />
                                     <small id="emailHelp" className="form-text text-muted">All emails will remain private</small>
                                     <br />
-                                    <label for="messageContact">Message</label>
+                                    <label>Message</label>
                                     <textarea type="text" name="message" className="form-control" id="messageContact" rows="3"
                                         placeholder="Leave a message here!"></textarea>
                                     <br />
@@ -45,8 +46,7 @@ function Contact() {
                     </section>
                 </section>
             </section>
-            <div id="spacing"></div>
-            <div id="spacing"></div>
+            <div className="push"></div>
         </div>
 
     )

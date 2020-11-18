@@ -2,14 +2,15 @@ import React from "react";
 import "./style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+// initialize aos
 AOS.init();
 
 
 
 function Portfolio({ repos, loading }) {
     return (
-        <div data-aos="zoom-out-left" data-aos-duration="3000">
+        <div data-aos="fade-left" data-aos-duration="700" data-aos-easing="linear">
+            <div className="push"></div>
             <section className="row">
                 <section className="col-lg-12">
                     <section className="card mb-3 back portfolioHolder">
@@ -18,6 +19,7 @@ function Portfolio({ repos, loading }) {
                         </header>
                         <div className="container text-center test">
                             <section className="container-fluid portfolioContent row d-flex">
+                                {/* display all repositories */}
                                 {!loading ? repos.map(repo => {
                                     return <div key={repo.name} className="card col-sm-3 border-bottom repos m-2">
                                         <h4 className="border-bottom p-3">{repo.name}</h4>
@@ -30,6 +32,7 @@ function Portfolio({ repos, loading }) {
                     </section>
                 </section>
             </section>
+            <div className="push"></div>
         </div>
     )
 }

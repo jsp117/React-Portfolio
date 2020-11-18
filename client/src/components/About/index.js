@@ -9,7 +9,7 @@ function About() {
 
 
     return (
-        <div data-aos="zoom-in-down" data-aos-duration="3000">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
             <section className="row">
                 <section className="background"></section>
                 <section className="col-lg-12">
@@ -88,6 +88,7 @@ function About() {
                     </section>
                 </section>
             </section >
+            <div id="push"></div>
         </div >
     )
 }

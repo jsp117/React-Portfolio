@@ -1,46 +1,48 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import all components
 import Header from "../components/Header";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
+// stylesheet and api
 import "./style.css";
 import API from "../utils/api";
 
 function Main() {
-    const [page, setPage] = useState("index");
+    // initialize useStates
+    const [page, setPage] = useState("about");
     const [repos, setRepos] = useState([]);
-    // const [project, setProject] = useState(projectHolder);
     const [loading, setLoading] = useState(true);
 
+    // on initial render get all repositories
     useEffect(() => {
-
         API.getRepos()
             .then(function (response) {
                 setLoading(false);
                 // console.log("repos: ", response.data)
                 setRepos(response.data);
-
             }, err => console.log(err));
 
     }, []);
 
-    useEffect(() => {
-    }, [page]);
+    // useEffect(() => {
+    // }, [page]);
 
-    function handlePage(event) {
-        event.preventDefault();
+    // set page on nav click
+    function handlePage(target) {
+        // event.preventDefault();
         // console.log("target", event);
-        let value = event.target.innerText;
-        if (value === "About") {
+        // let value = event.target.innerText;
+        if (target === "about") {
             setPage("about");
-        } else if (value === "Portfolio") {
+        } else if (target === "portfolio") {
             setPage("portfolio");
-        } else if (value === "Contact") {
+        } else if (target === "contact") {
             setPage("contact");
-        } else if (value === "Projects") {
+        } else if (target === "projects") {
             setPage("projects");
         }
     }
