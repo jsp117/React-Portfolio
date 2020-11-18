@@ -18,12 +18,15 @@ function Contact() {
             setModalClass("modal showModal");
             setText("I'll get back to you as soon as possible.")
             console.log("event target", event);
-            // emailjs.sendForm('service_bokj3ol', 'template_wwo76gm', event.target, 'user_eE4STRSTZQcemToQIuSU5')
-            //     .then((result) => {
-            //         console.log(result.text);
-            //     }, (error) => {
-            //         console.log(error.text);
-            //     });
+            event.target[0].value = "";
+            event.target[1].value = "";
+            event.target[2].value = "";
+            emailjs.sendForm('service_bokj3ol', 'template_wwo76gm', event.target, 'user_eE4STRSTZQcemToQIuSU5')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
         } else {
             console.log("incomplete");
             setText("Please complete all fields.");
