@@ -1,3 +1,11 @@
 .push{
     padding: 3%;
 }
+
+.hideModal{
+    display: none;
+}
+
+.showModal{
+    display: block;
+}
