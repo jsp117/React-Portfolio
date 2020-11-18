@@ -13,7 +13,7 @@ function Contact() {
             });
     }
     return (
-        <div data-aos="zoom-in-down" data-aos-duration="3000">
+        <div data-aos="zoom-in-right" data-aos-duration="3000">
             <section className="row">
                 <section className="col-lg-12">
                     <section className="card border-light mb-3 back">

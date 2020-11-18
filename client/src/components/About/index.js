@@ -1,5 +1,9 @@
 import React from "react";
 import "./style.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function About({ page }) {
 
@@ -19,23 +23,23 @@ function About({ page }) {
                                     <img className="pl-3 img-fluid d-block float-left mb-3 col picture"
                                         src="https://media-exp1.licdn.com/dms/image/C4E03AQEa1XPMTj3BqQ/profile-displayphoto-shrink_200_200/0?e=1609977600&v=beta&t=KH2_NH0JiTfnx5kmm6WCQXTzamcM2Dj7xOUE2fVIlno"
                                         alt="Jon SanPedro Picture"></img><p className="card-text text-wrap pt-4 col"> Hello! I'm Jonathan
-                                    SanPedro
-                                    and I am a student at the Berkeley Coding Academy. I graduated from Rutgers
-                                    University
-                                    in
-                                    2014 with a
-                                    bachelors in Information Technology and Informatics. Since then, I've been
-                                    working
-                                    as an
-                                    IT
-                                    technician in
-                                    multiple states. Right around when Covid started, I began teaching myself 
-                                    JavaScript and
-                                    wanted to grow my skills further. I hope to gain the skills to become a
-                                    developer
-                                    and
-                                    choose
-                                    whatever
+                                        SanPedro
+                                        and I am a student at the Berkeley Coding Academy. I graduated from Rutgers
+                                        University
+                                        in
+                                        2014 with a
+                                        bachelors in Information Technology and Informatics. Since then, I've been
+                                        working
+                                        as an
+                                        IT
+                                        technician in
+                                        multiple states. Right around when Covid started, I began teaching myself
+                                        JavaScript and
+                                        wanted to grow my skills further. I hope to gain the skills to become a
+                                        developer
+                                        and
+                                        choose
+                                        whatever
                                         career path I want!</p>
                                 </article>
                             </section>

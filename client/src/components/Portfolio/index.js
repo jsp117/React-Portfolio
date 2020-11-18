@@ -1,8 +1,15 @@
 import React from "react";
 import "./style.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
+
+
 function Portfolio({ repos, loading }) {
     return (
-        <div data-aos="zoom-in-down" data-aos-duration="3000">
+        <div data-aos="zoom-out-left" data-aos-duration="3000">
             <section className="row">
                 <section className="col-lg-12">
                     <section className="card mb-3 back portfolioHolder">

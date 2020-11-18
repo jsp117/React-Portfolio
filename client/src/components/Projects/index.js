@@ -1,10 +1,14 @@
 import React from "react";
 import project from "../../projects.json";
 import "./style.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function Projects() {
     return (
-        <div data-aos="zoom-in-down" data-aos-duration="3000">
+        <div data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">
             <section className="row">
                 <section className="col-lg-12">
                     <section className="card mb-3 back">
