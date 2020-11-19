@@ -9,10 +9,43 @@
     },
     {
         "id": "2",
-        "name": "'OneUpDB'",
-        "description": "OneUpDB is a social media site for gamers. Select your favorite games, add friends, and recommend games to eachother. Search over 250000 games and view ratings and other information.",
-        "repo_url": "https: //github.com/jsp117/Videogame-Database",
+        "name": "OneUpDB",
+        "description": "OneUpDB is a social media site for gamers. Sign up, select your favorite games, add friends, and recommend games to eachother. Search over 250000 games and view ratings and other information.",
+        "repo_url": "https://github.com/jsp117/Videogame-Database",
         "deployed_url": "https://oneupdb.herokuapp.com/",
         "image_url": "https://github.com/jsp117/Videogame-Database/raw/main/public/assets/oneupdb.gif"
+    },
+    {
+        "id": "3",
+        "name": "Workout Tracker",
+        "description": "This application is a workout tracker built with MongoDB and deployed to Heroku. It tracks user-inputted exercises, saves them to MongoDB and creates data visualizations.",
+        "repo_url": "https://github.com/jsp117/Workout-Tracker",
+        "deployed_url": "https://jsp-workout-buddy.herokuapp.com/",
+        "image_url": "https://github.com/jsp117/Workout-Tracker/raw/main/public/assets/workout.gif"
+    },
+    
+    {
+        "id": "4",
+        "name": "Employee Directory",
+        "description": "This application is an employee directory with search and sort functionality built with React. ",
+        "repo_url": "https://github.com/jsp117/Employee-Directory",
+        "deployed_url": "https://jsp117.github.io/Employee-Directory/",
+        "image_url": "https://github.com/jsp117/Employee-Directory/raw/main/public/assets/usagenew.gif"
+    },
+    {
+        "id": "5",
+        "name": "Jon's Burger Joint",
+        "description": "This application emulates a restaurant, allowing users to eat and throw away burgers. It is built with SQL, with user-inputted burgers being added to a table along with a devoured status that controls which card it is displayed on.",
+        "repo_url": "https://github.com/jsp117/burger",
+        "deployed_url": "https://jons-burger-joint.herokuapp.com/",
+        "image_url": "https://github.com/jsp117/burger/raw/main/public/assets/images/burgerGif.gif"
+    },
+    {
+        "id": "6",
+        "name": "Weather Dashboard",
+        "description": "This application uses the OpenWeather API to gather weather information for user-inputted cities. Data is saved through local storage to retain the cities the user has previously searched for.",
+        "repo_url": "https://github.com/jsp117/Weather-Dashboard",
+        "deployed_url": "https://jsp117.github.io/Weather-Dashboard/",
+        "image_url": "https://github.com/jsp117/Weather-Dashboard/raw/master/assets/weather.png"
     }
 ]
