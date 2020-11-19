@@ -59,6 +59,8 @@ function Main() {
                     </Route>
                     <Route exact path={"/projects"} component={Projects}>
                     </Route>
+                    <Route component={About}>
+                    </Route>
                 </Switch>
                 <section id="spacing"></section>
             </div>
