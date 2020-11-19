@@ -90,7 +90,7 @@ This code snippet displays how I render the repositories. Using a ternary operat
 
 ## Future Development
 
-Due to the fact that I am only displaying two projects, I moved the projects out of MongoDB into a json file. In the future, I would like to scrape all the images and the rest of the repository information not given by the GitHub API and add this into MongoDB.
+Due to the fact that I am only displaying six projects, I moved the projects out of MongoDB into a json file. In the future, I would like to scrape all the images and the rest of the repository information not given by the GitHub API and add this into MongoDB.
 
 ## Author
 Jonathan SanPedro - Bachelors of Information Technology at Rutgers New Brunswick - Student at Berkeley Coding Bootcamp
