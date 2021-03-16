@@ -21,7 +21,7 @@ function About() {
                             <section className="row">
                                 <article className="card-body">
                                     <img className="pl-3 img-fluid d-block float-left mb-3 col picture"
-                                        src="https://media-exp1.licdn.com/dms/image/C4E03AQEa1XPMTj3BqQ/profile-displayphoto-shrink_200_200/0?e=1609977600&v=beta&t=KH2_NH0JiTfnx5kmm6WCQXTzamcM2Dj7xOUE2fVIlno"
+                                        src="https://media-exp1.licdn.com/dms/image/C4E03AQEa1XPMTj3BqQ/profile-displayphoto-shrink_200_200/0/1518801026907?e=1621468800&v=beta&t=D64o529EfuC0Cj8WmAXHpnY6lNFcH8WAd0ebcQ_S3DI"
                                         alt="Jon SanPedro Picture"></img><p className="card-text text-wrap pt-4 col"> Hello! I'm Jonathan
                                         SanPedro
                                         and I am a student at the Berkeley Coding Academy. I graduated from Rutgers

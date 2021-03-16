@@ -8,6 +8,7 @@ AOS.init();
 
 
 function Portfolio({ repos, loading }) {
+    console.log("repos: ", repos)
     return (
         <div data-aos="fade-left" data-aos-duration="700" data-aos-easing="linear">
             <div className="push"></div>
@@ -25,6 +26,7 @@ function Portfolio({ repos, loading }) {
                                         <h4 className="border-bottom p-3">{repo.name}</h4>
                                         <p>{repo.description}</p>
                                         <a href={repo.html_url} target="_blank" rel="noreferrer">Repository Link</a>
+                                        {repo.homepage ? <a href={repo.homepage} target="_blank" rel="noreferrer">Deployed Link</a> : ""}
                                     </div>
                                 }) : "Loading..."}
                             </section>

@@ -37,7 +37,7 @@ function Projects() {
                 </section>
             </section>
             <div id="push"></div>
-        </div >
+        </div>
     )
 }
 
