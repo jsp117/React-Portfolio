@@ -48,7 +48,7 @@ function About() {
                             <section className="row">
 
                                 <div className="col">
-                                    <p className="card-text">Current City: Sonoma, California </p>
+                                    <p className="card-text">Current City: San Francisco, California </p>
                                     <p className="card-text">Resume: </p>
                                     <ul>
                                         <a href="https://drive.google.com/file/d/1NIDjIfyLrpxmLubJwm1z6-Uy6BTDw7PV/view?usp=sharing"
