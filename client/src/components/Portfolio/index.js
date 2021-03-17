@@ -8,7 +8,6 @@ AOS.init();
 
 
 function Portfolio({ repos, loading }) {
-    console.log("repos: ", repos)
     return (
         <div data-aos="fade-left" data-aos-duration="700" data-aos-easing="linear">
             <div className="push"></div>
