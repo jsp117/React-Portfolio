@@ -2,11 +2,11 @@ import React from "react";
 import "./style.css"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import img from '../profile.jpeg';
 
 AOS.init();
 
 function About() {
-
 
     return (
         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
@@ -21,26 +21,16 @@ function About() {
                             <section className="row">
                                 <article className="card-body">
                                     <img className="pl-3 img-fluid d-block float-left mb-3 col picture"
-                                        src="https://media-exp1.licdn.com/dms/image/C4E03AQEa1XPMTj3BqQ/profile-displayphoto-shrink_200_200/0/1518801026907?e=1621468800&v=beta&t=D64o529EfuC0Cj8WmAXHpnY6lNFcH8WAd0ebcQ_S3DI"
+                                        // src="https://media-exp1.licdn.com/dms/image/C4E03AQEa1XPMTj3BqQ/profile-displayphoto-shrink_200_200/0/1518801026907?e=1621468800&v=beta&t=D64o529EfuC0Cj8WmAXHpnY6lNFcH8WAd0ebcQ_S3DI"
+                                        src={img}
+                                        style={{borderRadius: "25%"}}
                                         alt="Jon SanPedro Picture"></img><p className="card-text text-wrap pt-4 col"> Hello! I'm Jonathan
                                         SanPedro
-                                        and I am a student at the Berkeley Coding Academy. I graduated from Rutgers
+                                        and I am currently working at SignalFire as a Web Developer. I graduated from Rutgers
                                         University
                                         in
                                         2014 with a
-                                        bachelors in Information Technology and Informatics. Since then, I've been
-                                        working
-                                        as an
-                                        IT
-                                        technician in
-                                        multiple states. Right around when Covid started, I began teaching myself
-                                        JavaScript and
-                                        wanted to grow my skills further. I hope to gain the skills to become a
-                                        developer
-                                        and
-                                        choose
-                                        whatever
-                                        career path I want!</p>
+                                        bachelors in Information Technology and Informatics. Last year in September, I enrolled in the UC Berkeley Coding Bootcamp and earned my certificate in the full stack program. In the month after, I got an internship with SignalFire where I continue to work today!</p>
                                 </article>
                             </section>
                         </div>

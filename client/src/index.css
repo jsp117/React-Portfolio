@@ -5,7 +5,7 @@ h1{
 
 body{
   /* Photo by Emily Campbell on Unsplash */
-  background-image:url("./emily-campbell-yBq_CYFagvM-unsplash.jpg");
+  background-image:url("./background.jpg");
   background-size: cover;
   font-family: 'Roboto Slab', serif;
   overflow: auto;

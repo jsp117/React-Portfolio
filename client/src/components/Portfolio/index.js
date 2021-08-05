@@ -20,14 +20,14 @@ function Portfolio({ repos, loading }) {
                         <div className="container text-center test">
                             <section className="container-fluid portfolioContent row d-flex">
                                 {/* display all repositories */}
-                                {!loading ? repos.map(repo => {
+                                {!loading && repos ? repos.map(repo => {
                                     return <div key={repo.name} className="card col-sm-3 border-bottom repos m-2">
                                         <h4 className="border-bottom p-3">{repo.name}</h4>
                                         <p>{repo.description}</p>
                                         <a href={repo.html_url} target="_blank" rel="noreferrer">Repository Link</a>
                                         {repo.homepage ? <a href={repo.homepage} target="_blank" rel="noreferrer">Deployed Link</a> : ""}
                                     </div>
-                                }) : "Loading..."}
+                                }) : <div className='text-center'>Loading...</div>}
                             </section>
                         </div>
                     </section>

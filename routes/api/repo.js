@@ -1,11 +1,10 @@
 const router = require("express").Router();
-const repos = require("../../controllers/repos");
 const axios = require("axios");
 
 
 // get all repos
 router.route("/").get(async function (req, res) {
-    var token = process.env.TOKEN;
+    let token = process.env.TOKEN;
     // token = token.replace('toke', '');
     // get all repos from github
     let repos = await axios({
