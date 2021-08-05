@@ -4,7 +4,7 @@ const axios = require("axios");
 
 // get all repos
 router.route("/").get(async function (req, res) {
-    let token = process.env.TOKEN;
+    let token = process.env.TOKEN_NEW;
     // token = token.replace('toke', '');
     // get all repos from github
     let repos = await axios({
