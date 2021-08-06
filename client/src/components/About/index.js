@@ -41,7 +41,7 @@ function About() {
                                     <p className="card-text">Current City: San Francisco, California </p>
                                     <p className="card-text">Resume: </p>
                                     <ul>
-                                        <a href="https://drive.google.com/file/d/1NIDjIfyLrpxmLubJwm1z6-Uy6BTDw7PV/view?usp=sharing"
+                                        <a href="https://docs.google.com/document/d/1_TAbb2VMnB3buK-PAWFTQWWOwkbU7HlzU09rbcLFzic/edit?usp=sharing"
                                             target="_blank" rel="noreferrer">Link</a><br /> <br />
                                     </ul>
                                     <p className="card-text">Skills: </p>
