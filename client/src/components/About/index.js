@@ -23,7 +23,7 @@ function About() {
                                     <img className="pl-3 img-fluid d-block float-left mb-3 col picture"
                                         // src="https://media-exp1.licdn.com/dms/image/C4E03AQEa1XPMTj3BqQ/profile-displayphoto-shrink_200_200/0/1518801026907?e=1621468800&v=beta&t=D64o529EfuC0Cj8WmAXHpnY6lNFcH8WAd0ebcQ_S3DI"
                                         src={img}
-                                        style={{borderRadius: "25%"}}
+                                        style={{ borderRadius: "25%" }}
                                         alt="Jon SanPedro Picture"></img><p className="card-text text-wrap pt-4 col"> Hello! I'm Jonathan
                                         SanPedro
                                         and I am currently working at SignalFire as a Web Developer. I graduated from Rutgers
@@ -36,7 +36,6 @@ function About() {
                         </div>
                         <div className="container mt-5 pbottom">
                             <section className="row">
-
                                 <div className="col">
                                     <p className="card-text">Current City: San Francisco, California </p>
                                     <p className="card-text">Resume: </p>
@@ -56,7 +55,6 @@ function About() {
                                         <li>REST APIs</li>
                                     </ul>
                                 </div>
-
                                 <div className="col">
                                     <p className="card-text">Contact Information: </p>
                                     <ul>
@@ -72,14 +70,13 @@ function About() {
                                         </a>
                                     </ul>
                                 </div>
-
                             </section>
                         </div>
                     </section>
                 </section>
-            </section >
+            </section>
             <div id="push"></div>
-        </div >
+        </div>
     )
 }
 
