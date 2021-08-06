@@ -43,17 +43,7 @@ function About() {
                                         <a href="https://docs.google.com/document/d/1_TAbb2VMnB3buK-PAWFTQWWOwkbU7HlzU09rbcLFzic/edit?usp=sharing"
                                             target="_blank" rel="noreferrer">Link</a><br /> <br />
                                     </ul>
-                                    <p className="card-text">Skills: </p>
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JavaScript</li>
-                                        <li>jQuery</li>
-                                        <li>MySQL</li>
-                                        <li>Node.js</li>
-                                        <li>Express.js</li>
-                                        <li>REST APIs</li>
-                                    </ul>
+
                                 </div>
                                 <div className="col">
                                     <p className="card-text">Contact Information: </p>
@@ -70,7 +60,30 @@ function About() {
                                         </a>
                                     </ul>
                                 </div>
+
                             </section>
+                            <div className='ml-2'>
+                                <p className="card-text">Skills: </p>
+                                <div className='row'>
+                                    <ul className='col-3'>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>PostgreSQL</li>
+                                        <li>NextJS</li>
+
+                                    </ul>
+                                    <ul className='col-3'>
+                                        <li>MongoDB</li>
+                                        <li>jQuery</li>
+                                        <li>MySQL</li>
+                                        <li>Node.js</li>
+                                        <li>Express.js</li>
+                                        <li>REST APIs</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </section>
