@@ -4,7 +4,7 @@ const axios = require("axios");
 
 // get all repos
 router.route("/").get(async function (req, res) {
-    let token = 'process.env.TOKEN_NEW';
+    let token = process.env.TOKEN_NEW;
     
     let repos = await axios({
         url: "https://api.github.com/users/jsp117/repos",
